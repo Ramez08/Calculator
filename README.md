@@ -1,5 +1,3 @@
-Certainly! Here's the updated README.md file with the addition of the video reference:
-
 ```markdown
 # Calculator
 
