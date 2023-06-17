@@ -1,0 +1,62 @@
+/* Global styles */
+*, *::before, *::after {
+  box-sizing: border-box; /* Ensures consistent box sizing for all elements */
+  font-family: Gotham Rounded, sans-serif; /* Sets the font family for all elements */
+  font-weight: normal; /* Sets normal font weight for all elements */
+}
+
+/* Body styles */
+body {
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(to right, #00AAFF, #00FF6C); /* Sets a linear gradient background color */
+}
+
+/* Calculator grid styles */
+.calculator-grid {
+  display: grid; /* Sets the display type to grid */
+  justify-content: center; /* Centers the grid horizontally */
+  align-content: center; /* Centers the grid vertically */
+  min-height: 100vh; /* Sets the minimum height of the grid to the full viewport height */
+  grid-template-columns: repeat(4, 85px); /* Sets the grid columns to repeat 4 times with a width of 85px each */
+  grid-template-rows: minmax(120px, auto) repeat(5, 85px); /* Sets the grid rows with a minimum height of 120px for the output and 85px for the buttons */
+}
+
+.calculator-grid > button {
+  cursor: pointer; /* Sets a pointer cursor for the buttons */
+  font-size: 2rem; /* Sets the font size for the buttons */
+  border: 1px solid white; /* Sets a white border for the buttons */
+  outline: none; /* Removes the outline on focus */
+  background-color: rgba(255, 255, 255, .75); /* Sets the background color for the buttons */
+}
+
+.calculator-grid > button:hover {
+  background-color: rgba(255, 255, 255, .9); /* Sets the background color for the buttons on hover */
+}
+
+.span-two {
+  grid-column: span 2; /* Spans the button across 2 grid columns */
+}
+
+/* Output styles */
+.output {
+  grid-column: 1 / -1; /* Sets the output element to span across all grid columns */
+  background-color: rgba(0, 0, 0, .75); /* Sets the background color for the output element */
+  display: flex; /* Sets the display type to flex */
+  align-items: flex-end; /* Aligns the content at the bottom of the output element */
+  justify-content: space-around; /* Distributes the content evenly along the horizontal axis */
+  flex-direction: column; /* Sets the flex direction to column */
+  padding: 10px; /* Adds padding to the output element */
+  word-wrap: break-word; /* Allows long words to break and wrap to the next line */
+  word-break: break-all; /* Breaks words at any character to fit within the container */
+}
+
+.output .previous-operand {
+  color: rgba(255, 255, 255, .75); /* Sets the color for the previous operand */
+  font-size: 1.5rem; /* Sets the font size for the previous operand */
+}
+
+.output .current-operand {
+  color: white; /* Sets the color for the current operand */
+  font-size: 2.5rem; /* Sets the font size for the current operand */
+}

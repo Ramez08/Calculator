@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="styling.css" rel="stylesheet"> <!-- Link to external CSS file for styling -->
+    <script src="script.js" defer></script> <!-- Link to external JavaScript file with deferred loading -->
+</head>
+<body>
+   <div class="calculator-grid">
+    <div class="output">
+        <div data-previous-operand class="previous-operand"></div> <!-- Element to display previous operand -->
+        <div data-current-operand class="current-operand"></div> <!-- Element to display current operand -->
+    </div>
+    <button class="span-two" data-all-clear>AC</button> <!-- Button to clear all input -->
+    <button data-delete>DEL</button> <!-- Button to delete the last input -->
+    <button data-operation>÷</button> <!-- Button for division operation -->
+    <button data-number>1</button> <!-- Button for number 1 -->
+    <button data-number>2</button> <!-- Button for number 2 -->
+    <button data-number>3</button> <!-- Button for number 3 -->
+    <button data-operation>*</button> <!-- Button for multiplication operation -->
+    <button data-number>4</button> <!-- Button for number 4 -->
+    <button data-number>5</button> <!-- Button for number 5 -->
+    <button data-number>6</button> <!-- Button for number 6 -->
+    <button data-operation>+</button> <!-- Button for addition operation -->
+    <button data-number>7</button> <!-- Button for number 7 -->
+    <button data-number>8</button> <!-- Button for number 8 -->
+    <button data-number>9</button> <!-- Button for number 9 -->
+    <button data-operation>-</button> <!-- Button for subtraction operation -->
+    <button data-number>.</button> <!-- Button for decimal point -->
+    <button data-number>0</button> <!-- Button for number 0 -->
+    <button data-equals class="span-two">=</button> <!-- Button to perform the calculation -->
+   </div> 
+</body>
+</html>
